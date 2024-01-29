@@ -28,8 +28,9 @@ const btNext = document.getElementById('next');
 
 body.onload = drawMusics = () => {
   musics.forEach(music => {
-    const div = document.createElement('div');
-    div.className = "music";
+    const button = document.createElement('button');
+    button.className = "music";
+    button.onclick = () => playSong(music.id);
     const pId = document.createElement('p');
     pId.textContent = music.id;
     const img = document.createElement('img');
@@ -39,9 +40,13 @@ body.onload = drawMusics = () => {
     pName.className = "music-name"
     pName.textContent = music.name;
 
-    div.appendChild(pId);
-    div.appendChild(img);
-    div.appendChild(pName);
-    popular.appendChild(div);
+    button.appendChild(pId);
+    button.appendChild(img);
+    button.appendChild(pName);
+    popular.appendChild(button);
   });
+}
+
+const playSong = (musicId) => {
+
 }
