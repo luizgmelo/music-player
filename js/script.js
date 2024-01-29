@@ -9,13 +9,13 @@ const musics = [
     id: "2",
     logoSrc: "./images/logo.jpeg",
     name: "I Wanna Be Yours",
-    musicSrc: "../musics/I Wanna Be Yours.mp3"
+    musicSrc: "../musics/IWannaBeYours.mp3"
   },
   {
     id: "3",
     logoSrc: "./images/logo.jpeg",
     name: "Do I Wanna Know",
-    musicSrc: "../musics/Do I Wanna Know.mp3"
+    musicSrc: "../musics/DoIWannaKnow.mp3"
   }
 ];
 
