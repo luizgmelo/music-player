@@ -47,6 +47,9 @@ body.onload = drawMusics = () => {
   });
 }
 
+const audio = new Audio();
 const playSong = (musicId) => {
-
+  const music = musics[musicId-1];
+  audio.src = music.musicSrc;
+  audio.play();
 }
