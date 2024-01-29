@@ -20,12 +20,28 @@ const musics = [
 ];
 
 const body = document.querySelector('body');
-const popular = document.getElementById('popular');
+const popular = document.getElementById('divPopular');
 const btPrevious = document.getElementById('previous');
 const btPlay = document.getElementById('play');
 const btPause = document.getElementById('pause');
 const btNext = document.getElementById('next');
 
 body.onload = drawMusics = () => {
-  console.log("Morning")
+  musics.forEach(music => {
+    const div = document.createElement('div');
+    div.className = "music";
+    const pId = document.createElement('p');
+    pId.textContent = music.id;
+    const img = document.createElement('img');
+    img.className = "music-logo";
+    img.setAttribute("src", music.logoSrc);
+    const pName = document.createElement('p');
+    pName.className = "music-name"
+    pName.textContent = music.name;
+
+    div.appendChild(pId);
+    div.appendChild(img);
+    div.appendChild(pName);
+    popular.appendChild(div);
+  });
 }
