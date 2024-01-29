@@ -29,6 +29,13 @@
     text-align: center;
 }
 
+.btn {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
 .popular-title {
     margin-left: 10px;
     margin-top: 20px;
