@@ -53,3 +53,9 @@ const playSong = (musicId) => {
   audio.src = music.musicSrc;
   audio.play();
 }
+
+const pauseSong = () => {
+  audio.pause();
+}
+
+btPause.addEventListener("click", pauseSong)
